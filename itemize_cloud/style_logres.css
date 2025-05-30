@@ -1,0 +1,182 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-panel, .right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
+}
+
+.left-panel {
+  background: #ffffff;
+}
+
+.right-panel {
+  background: #222 url('assets/1343095.png') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #ffffff;
+}
+
+.right-panel h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 800;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5); /* lebih gelap sedikit supaya lebih kelihatan */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* ini penting: rata kiri */
+  text-align: left; /* supaya text juga rata kiri */
+}
+
+
+h2 {
+  font-size: 2rem;
+  color: #4d5fd1;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: none;
+  background: #e0e0e0;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+
+button {
+  background: #4d5fd1;
+  color: #ffffff;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #3b4bb3;
+}
+
+button.outline {
+  background: transparent;
+  border: 2px solid #ffffff;
+  padding: 0.8rem 2rem;
+  margin-top: 1.5rem;
+  font-weight: bold;
+}
+
+button a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.remember-me {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.remember-me input[type="checkbox"] {
+  margin: 0.2rem;
+  margin-right: 7px;
+  width: 16px;
+  height: 16px;
+}
+
+.remember-me label {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1;
+}
+
+.switch {
+  font-size: 0.9rem;
+  color: #888888;
+  cursor: pointer;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.right-panel h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.right-panel p {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-panel, .right-panel {
+    padding: 2rem;
+  }
+
+  .right-panel {
+  min-height: 50vh;
+  }
+
+  .overlay {
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .overlay p {
+    font-size: 0.9rem;
+  }
+
+  button.outline {
+    width: 100%;
+    text-align: center;
+  }
+}
+

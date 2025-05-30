@@ -1,0 +1,239 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #000;
+}
+
+nav {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo span {
+  color: #999;
+}
+
+.logo b span {
+  color: #6c63ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4b44cc;
+}
+
+.nav-links a.active {
+  color: #6c63ff;
+}
+
+.hero {
+  background: #6c63ff;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.search-container input {
+  padding: 0.5rem;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-container button {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background: #eee;
+}
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table thead {
+  background-color: #bcc5e0;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #d4d8f0;
+}
+
+table td, table th {
+  padding: 0.8rem;
+  text-align: left;
+}
+
+form#itemForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background-color: #f0f1ff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+form#itemForm input, form#itemForm select, form#itemForm button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form#itemForm button {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form#itemForm button:hover {
+  background-color: #574fd6;
+}
+
+.action-buttons button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.button_style {
+  background: #4d5fd1;
+  color: #ffffff;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+
+.form-section {
+  background-color: #f0f1ff;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+  margin-bottom: 1rem;
+}
+
+.form-section form {
+  width: 100%;
+}
+
+.form-section input,
+.form-section select {
+  display: inline-block;      
+  width: 3000px;               
+  max-width: 100%;            
+  margin-bottom: 1rem;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-section button {
+  display: inline-flex;      
+  width: 150px;               
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #6c63ff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-section button:hover {
+  background-color: #574fd6;
+}
+
+label {
+  font-weight: bold;
+  margin: 0.5rem 0 0.2rem;
+  display: block;
+}
+
+.btn-modern {
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s, transform 0.2s;
+  color: white;
+  margin-right: 0.4rem;
+  border: 2px solid transparent;
+}
+
+.btn-modern.edit {
+  background-color: #574fd6;
+}
+
+.btn-modern.edit:hover {
+  background-color: #574fd6;
+  border-color: #574fd6;
+  transform: scale(1.05);
+}
+
+.btn-modern.delete {
+  background-color: #574fd6;
+}
+
+.btn-modern.delete:hover {
+  background-color: #574fd6;
+  border-color: #574fd6;
+  transform: scale(1.05);
+}
